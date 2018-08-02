@@ -1,0 +1,168 @@
+body{
+    background: #fff;
+  }
+
+  #logo{
+    width: 20%;
+    height: 10%;
+  }
+  
+  header {
+      background-image: url(http://www.greenreport.it/wp-content/uploads/2016/11/acqua-mondo.jpg);
+      background-repeat: no-repeat;
+      background-position: center-top;
+      width: 100%;
+      height: 20%;
+      padding: 30px 0 100px 20px;
+  }
+  .container {
+      display: flex;
+      width: 100vw;
+      height: 8%;
+      justify-content: space-between;
+      align-items: stretch;
+  }
+  .box {
+      font-family: Verdana;
+      font-size: 16px;
+      color: #fff;
+      padding: 2vh;
+      border: 1px solid #557fb1;
+      flex: 1;
+      text-align: center;
+      background: linear-gradient(#e6f5fc, #8cb4d8);
+  }
+  .menu{
+      display: none;
+  }
+  main {
+      margin: auto;
+      width: 98%;
+  }
+  a {
+      text-decoration: none;
+      color: #fff;
+      font-family: Verdana;
+  }
+  .left_float {
+      float: left;
+  }
+  .pic {
+      width: 500px;
+      height: 330px;
+      margin: 20px 20px 0 20px;
+  }
+  #pic2 {
+      width: 500px;
+      height: 683px;
+      margin-top: 20px;
+  }
+  .images {
+      text-align: center;
+      width: 400px;
+      height: 250px;
+      margin: 20px;
+  }
+  .small_img {
+      width: 212px;
+      height: 212px;
+      margin: 20px 20px 0 20px;
+  }
+  article {
+      float: left;
+      column-count: 3;
+      column-gap: 40px;
+  }
+  footer {
+      display: flex;
+      width: 100vw;
+      height: 20vh;
+      justify-content: space-around;
+      align-items: flex-start;
+  }
+  p {
+      color: #1c3971;
+      font-size: 16px;
+      padding-left: 1vw;
+  }
+  #boldword {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2f597f;
+      padding-left: 2vw;
+  }
+  h2 {
+      color: #2f597f;
+      padding-left: 2vw;
+  }
+  .social {
+      position: absolute;
+      top: 320px;
+      right: 10px;
+  }
+  .icon {
+      width: 30px;
+      height: 30px;
+  }
+  #center{
+      text-align: center;
+      padding-top: 2%;
+      font-size: 12px;
+  }
+  
+  @media screen and (max-width: 700px){
+    article {
+        float: left;
+        column-count: 1;
+        column-gap: 1%;
+    }
+    .social {
+        display: none;
+    }
+    .left_float{
+        display: block;
+        float: none;
+    }
+    .pic {
+        width: 100%;
+        height: 33%;
+        margin: 5px 2px 0 2px;
+    }
+    #pic2 {
+        width: 100%;
+        height: 68%;
+        margin: 5px 2px 0 2px;
+    }
+    .small_img {
+        width: 100%;
+        height: 21%;
+        margin: 5px 2px 0 2px;
+    }
+    .images {
+        text-align: center;
+        width: 100%;
+        height: 25%;
+        margin: 5px 2px 0 2px;
+    }
+    .icon {
+        margin: 2px;
+    }
+    .menu{
+        display: flex;
+        flex-basis: 5%;
+        height: 10%;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        background: linear-gradient(#e6f5fc, #8cb4d8);
+
+
+    }
+    .box{
+        display: none;
+    }
+
+    
+  }
