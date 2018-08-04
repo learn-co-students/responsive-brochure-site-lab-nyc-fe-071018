@@ -1,0 +1,57 @@
+.container {
+  background: #00BFEA;
+}
+
+headers {
+  font-weight: 800;
+}
+
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 10% 10% 200px;
+  grid-column-gap: 3%;
+}
+
+.item_social {
+  grid-area: 2/1/2/1;
+}
+
+.name_title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.subhead_underline {
+  color: #BEBEBE;
+  border-style: solid;
+}
+
+.company_name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.emojis {
+  font-size: 20px;
+  padding: 1px 1px;
+  margin: 1px 1px;
+}
+
+.skills-list {
+  list-style-type: square;
+}
+
+header img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  max-width: 50%;
+}
+
