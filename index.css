@@ -1,0 +1,133 @@
+.header {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+  padding: 10px;
+  background-color: #7b2f3d;
+  grid-area: header;
+}
+
+.article {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+  background-color: #7b2f3d;
+  font-weight: 50;
+}
+
+.article1 {
+  align-content: center;
+  justify-content: space-around;
+}
+
+.container {
+  min-height: 100%;
+  max-width: 100%;
+  display: grid;
+  border: 5px solid goldenrod;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr 0.5fr;
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "article1 article2 aside"
+  "footer footer footer";
+}
+
+.flex-container {
+  display: grid;
+  flex-direction: row;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.1)
+}
+
+.aside {
+  display: grid;
+  background-color: #8DEEEE;
+  font-size: 14px;
+  align-content: center;
+  padding: 5px;
+}
+
+
+.footer {
+  grid-area: footer;  
+  display: grid;
+  background-color: #7b2f3d;
+  font-size: 15px;
+  color: mistyrose;
+  text-align: center;
+}
+
+.topimage {
+  height: 150px;
+  width: 150px;
+  float: right;
+}
+
+
+nav {
+  padding: 0px 200px 0px 200px;
+  grid-area: nav;
+  background-color: lightblue;
+  color: purple;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+.panoramic {
+  width: 100%;
+}
+
+.panoramic:hover {
+  filter: grayscale(100%) blur(5px);
+  transition: 2s;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover, visited, link {
+  text-decoration: none;
+  color: red;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+   .container {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-areas: 
+     "header"
+     "nav"
+     "article1"
+     "article2"
+     "aside"
+     "footer";
+     min-width: 100vw;
+   }
+}
+
+
+
+
+.sniffer:hover {
+  font-weight: 200;
+  transform: scale(4);
+  transition: transform 1s;
+}
+
+
+
